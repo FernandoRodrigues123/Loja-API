@@ -1,0 +1,1 @@
+alter table  gestor add email VARCHAR(255);
