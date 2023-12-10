@@ -41,7 +41,7 @@ public class GestorController {
         gestor.setSenha(senhaCrypt);
         gestor.setEmail(gestorDTO.email());//criando obj gestor
 
-        URI uri = uriBuilder.path("/gestor/{id}").buildAndExpand(gestor.getId()).toUri();//url de retorno
+            URI uri = uriBuilder.path("/gestor/{id}").buildAndExpand(gestor.getId()).toUri();//url de retorno
 
 
         usuarioRepository.save( new GestorUsuario(gestor.getEmail(), gestor.getSenha()));
